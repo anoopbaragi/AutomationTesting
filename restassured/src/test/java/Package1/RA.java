@@ -49,7 +49,7 @@ public class RA
 		//System.out.println(js.toString());
 		given().body(js.toJSONString()).when().put("https://reqres.in/api/users/2").then().statusCode(200).log().all();
 	}
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void test5()
 	{
 		//JSONObject js = new JSONObject();
@@ -59,7 +59,7 @@ public class RA
 		//System.out.println(js.toString());
 		given().delete("https://reqres.in/api/users/2").then().statusCode(204).log().all();	
 	}
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void test6()
 	{
 		//given().get("http://localhost:3000/users").then().statusCode(200).log().all();

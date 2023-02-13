@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Package1.Trello">
+      <class name="Package1.RAA">
         <methods>
-          <include name="delete_boards"/>
+          <include name="testcase11"/>
+          <include name="testcase13"/>
         </methods>
-      </class> <!-- Package1.Trello -->
+      </class> <!-- Package1.RAA -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

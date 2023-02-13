@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Package2.JSE">
+      <class name="Package2.OHRM">
         <methods>
+          <include name="OHRM"/>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="tc1"/>
         </methods>
-      </class> <!-- Package2.JSE -->
+      </class> <!-- Package2.OHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

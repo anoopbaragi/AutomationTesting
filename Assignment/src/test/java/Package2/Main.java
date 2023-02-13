@@ -125,8 +125,8 @@ public class Main
 	  List<WebElement> we3 = wd.findElements(By.tagName("iframe"));
 	  wd.switchTo().frame("courses-iframe");
 	  js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-	  Thread.sleep(3000);
-	  js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
+	  //Thread.sleep(3000);
+	  //js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
   }
   
   @AfterTest

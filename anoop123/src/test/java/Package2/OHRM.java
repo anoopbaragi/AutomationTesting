@@ -40,7 +40,7 @@ public class OHRM
 	  wd.findElement(By.xpath("//*[@name=\'username']")).sendKeys("Admin");
 	  wd.findElement(By.xpath("//*[@name=\'password']")).sendKeys("admin123");
 	  wd.findElement(By.xpath("//*[@class=\'oxd-button oxd-button--medium oxd-button--main orangehrm-login-button\']")).click();
-	  Thread.sleep(6000);
+	 /* Thread.sleep(6000);
 	  wd.findElement(By.linkText("Admin")).click();
 	  Thread.sleep(6000);
 	  wd.findElement(By.xpath("//*[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow\']")).click();
@@ -60,7 +60,8 @@ public class OHRM
 	  Thread.sleep(3000);
 	  //js.executeScript("document.getElementsByClassName('oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin').click()");
 	  wd.findElement(By.xpath("//*[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']")).click();
-	  Thread.sleep(6000);
+	  Thread.sleep(6000);*/
+	  Thread.sleep(3000);
 	  wd.findElement(By.xpath("//*[@class=\'oxd-icon bi-caret-down-fill oxd-userdropdown-icon\']")).click();
       Thread.sleep(3000);   //waiting time
       wd.findElement(By.xpath("//*[@href=\'/web/index.php/auth/logout\']")).click();
@@ -74,3 +75,4 @@ public class OHRM
   }
 
 }
+
