@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Package2.OHRM">
+      <class name="Package2.Assertconditions">
         <methods>
-          <include name="OHRM"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="yogi"/>
+          <include name="prathiksha"/>
+          <include name="prashanth"/>
         </methods>
-      </class> <!-- Package2.OHRM -->
+      </class> <!-- Package2.Assertconditions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

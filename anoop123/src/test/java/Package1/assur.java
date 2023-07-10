@@ -12,16 +12,16 @@ public class assur {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\selenium-java-4.7.0\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\HP\\Downloads\\chromedriver.exe");
 		WebDriver wd = new ChromeDriver();
 		wd.manage().window().maximize();
 		wd.navigate().to("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		Thread.sleep(3000);
-		/*String str = wd.getTitle();
-		String expected_Title ="OrangeHRM";
-		Assert.assertEquals(str, expected_Title);*/
-		WebElement d = wd.findElement(By.xpath("//*[@class=\'oxd-text oxd-text--p orangehrm-login-forgot-header\']"));
-		Assert.assertEquals(true, d.isDisplayed());
+		String str = wd.getTitle();
+		String expected_Title ="OrangeHRM1";
+		Assert.assertEquals(str, expected_Title);
+		//WebElement d = wd.findElement(By.xpath("//*[@class=\'oxd-text oxd-text--p orangehrm-login-forgot-header\']"));
+		//Assert.assertEquals(true, d.isDisplayed());
 		System.out.println("Assurestion Passed");
 		wd.close();
 	}

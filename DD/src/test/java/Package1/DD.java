@@ -46,7 +46,8 @@ public class DD
 		 wd.findElement(By.xpath("//*[@type='submit']")).click();
 		 Thread.sleep(3000);
 		
-          if(wd.getCurrentUrl().equalsIgnoreCase("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index")) {
+          if(wd.getCurrentUrl().equalsIgnoreCase("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"))
+          {
 			
 			 wd.findElement(By.xpath("//*[@class=\'oxd-userdropdown-name\']")).click();
 			 Thread.sleep(1000);

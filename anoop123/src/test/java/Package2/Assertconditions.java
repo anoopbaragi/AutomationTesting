@@ -1,6 +1,5 @@
-package Package2;
+ package Package2;
 
-import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
@@ -11,7 +10,7 @@ public class Assertconditions {
 	  AssertJUnit.assertEquals("tushar", "anoop");
 	  System.out.println("This is first case");
   }
-  @Test(priority = 1,dependsOnMethods = "yogi",alwaysRun = true)
+  @Test(priority = 1,dependsOnMethods = "yogi",alwaysRun = false)
   public void prathiksha()
   {
 	  System.out.println("This is second case");

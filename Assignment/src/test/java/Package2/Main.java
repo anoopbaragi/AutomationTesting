@@ -8,8 +8,6 @@ import org.testng.annotations.BeforeTest;
 
 import java.awt.AWTException;
 import java.awt.Robot;
-import java.awt.Window;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -17,7 +15,6 @@ import javax.swing.event.MenuKeyEvent;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,7 +38,7 @@ public class Main
 	  wd.manage().window().maximize();
   }
   
-  @Test
+  @Test(invocationCount = 2)
   public void practice() throws InterruptedException, AWTException 
   {
 	  JavascriptExecutor js  = (JavascriptExecutor)wd;
@@ -125,14 +122,15 @@ public class Main
 	  List<WebElement> we3 = wd.findElements(By.tagName("iframe"));
 	  wd.switchTo().frame("courses-iframe");
 	  js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-	  //Thread.sleep(3000);
-	  //js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
+	  Thread.sleep(3000);
+	  js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
+	 
   }
   
   @AfterTest
   public void afterTest() 
   {
-	  
+	  wd.close();
   }
 
 }

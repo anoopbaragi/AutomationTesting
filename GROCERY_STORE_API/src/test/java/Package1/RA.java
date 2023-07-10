@@ -2,6 +2,9 @@ package Package1;
 
 import static io.restassured.RestAssured.*;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
@@ -64,9 +67,9 @@ public class RA
 	@Test(enabled = true)
 	public void test6()
 	{
-		/*JSONObject js = new JSONObject();
+		JSONObject js = new JSONObject();
 		js.put("productId", 4643);
-		given().body(js.toJSONString()).when().post("https://simple-grocery-store-api.glitch.me/carts/"+cid+"/items").then().statusCode(201).log().all();*/
-		Response response =given().params("productId:", 4646).when().post("https://simple-grocery-store-api.glitch.me/carts/"+cid+"/items").then().log().all().extract().response();
+		//given().contentType("application/json").request().param("productId", 4643).when().post("https://simple-grocery-store-api.glitch.me/carts/"+cid+"/items").then().log().all();
+		given().body(js.toJSONString()).when().post("https://simple-grocery-store-api.glitch.me/carts/"+cid+"/items").then().statusCode(201).log().all();
 	}
 }

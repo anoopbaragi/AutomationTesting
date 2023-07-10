@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Package2.banjara">
+      <class name="Package1.Demo">
         <methods>
-          <include name="test1"/>
-          <include name="afterTest"/>
           <include name="bt"/>
+          <include name="demo"/>
         </methods>
-      </class> <!-- Package2.banjara -->
+      </class> <!-- Package1.Demo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

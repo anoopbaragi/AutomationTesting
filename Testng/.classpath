@@ -8,6 +8,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/HP/Downloads/webdrivermanager-5.1.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/HP/Downloads/selenium-server-standalone-3.141.59.jar"/>
-	<classpathentry kind="lib" path="C:/Users/HP/Downloads/testng-7.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/testng-7.4.0 (1).jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

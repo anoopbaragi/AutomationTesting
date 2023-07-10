@@ -1,6 +1,5 @@
 package Package2;
 
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -174,7 +173,7 @@ public class banjara
 		//logger.log(LogStatus.PASS, "Logout Selected");
 		test.log(Status.PASS, "Logout Selected");
 		Thread.sleep(5000);
-	 	driver.pressKey(new KeyEvent(AndroidKey.HOME));
+	 	//driver.pressKey(new KeyEvent(AndroidKey.HOME));
 		}
 	
 	@AfterTest

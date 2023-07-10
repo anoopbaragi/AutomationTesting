@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Package1.blogin">
+      <class name="Package2.Main">
         <methods>
-          <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="books"/>
+          <include name="afterTest"/>
+          <include name="practice"/>
         </methods>
-      </class> <!-- Package1.blogin -->
+      </class> <!-- Package2.Main -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
